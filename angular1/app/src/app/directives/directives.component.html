@@ -1,0 +1,15 @@
+<p>directives works!</p>
+
+<h1>If-Else</h1>
+<br><br>
+<h1 *ngIf=" show then ifBlock else elseBlock"></h1>
+
+<ng-template #ifBlock>{{ifc}}</ng-template>
+<ng-template #elseBlock>{{elsec}}</ng-template>
+<ng-template [ngIf]="color==='red'"><p style="color: red;">red</p></ng-template>
+
+<!-- <div [ngSwitch]="colour">
+  <h1 *ngSwitchCase="'red'" style="color: red;">RED COLOR</h1>
+  <h1 *ngSwitchCase="'green'" style="color:green;">Green COLOR</h1>
+
+</div> -->
